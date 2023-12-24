@@ -23,7 +23,7 @@ def test_aoai_chat_completion():
         file_location=KEY_LOC,
         filter_dict={"api_type": ["azure"], "model": ["gpt-3.5-turbo"]},
     )
-    client = OpenAIWrapper(config_list=config_list)
+    client = rapper(config_list=config_list)
     # for config in config_list:
     #     print(config)
     #     client = OpenAIWrapper(**config)
